@@ -1,0 +1,148 @@
+/* font-family: 'Inter', sans-serif;  */
+
+html {
+  background-color: #1c1c1c;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+}
+
+input {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  padding-left: 10px;
+  color: white;
+}
+input:focus {
+  outline: none;
+}
+
+.resturant_map {
+  position: relative;
+}
+
+.tables img {
+  position: absolute;
+}
+/* change this  */
+.months {
+  display: none;
+}
+.dates {
+  display: none;
+}
+
+.times {
+  display: none;
+}
+.container {
+  display: flex;
+  width: 500px;
+  height: 100vh;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+.container div {
+  margin-bottom: 20px;
+}
+
+.dateAndTime {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.border_bottom {
+  border-bottom: 2px solid white;
+  padding-bottom: 3px;
+}
+
+.dropdownBTN {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+}
+
+.table-selection {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  gap: 25px;
+}
+
+.btn {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.btn button {
+  padding: 10px;
+  color: #1c1c1c;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background-color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+#table {
+  width: 100px;
+}
+#big-table-1 {
+  top: 14.5px;
+  left: 26px;
+}
+
+#big-table-2 {
+  top: 14.5px;
+  left: 118px;
+}
+
+#big-table-3 {
+  top: 96.5px;
+  left: 67px;
+}
+#big-table-4 {
+  top: 209.5px;
+  left: 67px;
+}
+#big-table-5 {
+  top: 291.5px;
+  left: 26px;
+}
+#big-table-6 {
+  top: 291.5px;
+  left: 118px;
+}
+
+#small-table-1 {
+  top: 58.5px;
+  left: 218px;
+}
+#small-table-2 {
+  top: 103.5px;
+  left: 234px;
+}
+#small-table-3 {
+  top: 149.5px;
+  left: 242px;
+}
+#small-table-4 {
+  top: 202.5px;
+  left: 234px;
+}
+#small-table-5 {
+  top: 247.5px;
+  left: 218px;
+}
+
+.tables img {
+  cursor: pointer;
+}
