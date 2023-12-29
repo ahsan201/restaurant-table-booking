@@ -42,9 +42,19 @@ input:focus {
 /* change this  */
 .monthContainer {
   position: relative;
+  cursor: pointer;
 }
-.months {
-  /* display: none; */
+.dateContainer {
+  position: relative;
+  cursor: pointer;
+}
+.timeContainer {
+  position: relative;
+  cursor: pointer;
+  width: 90px;
+}
+.dropdown {
+  display: none;
   position: absolute;
   width: 100%;
   height: 180px;
@@ -52,24 +62,30 @@ input:focus {
   scrollbar-gutter: stable;
   overflow-x: hidden;
   margin-top: -18px;
-  background-color: rgba(0, 0, 0, 0.151);
+  background-color: #272727;
   padding: 2px;
+  z-index: 100;
 }
-.months p {
+.dropdown p {
   padding: 5px;
   font-size: 80%;
 }
 
-.months p:hover {
+.dropdown p:hover {
   background-color: rgba(206, 206, 206, 0.247);
 }
-.dates {
-  display: none;
+.monthContainer:hover .months {
+  display: block;
 }
 
-.times {
-  display: none;
+.dateContainer:hover .dates {
+  display: block;
 }
+
+.timeContainer:hover .times {
+  display: block;
+}
+
 .container {
   display: flex;
   width: 500px;
@@ -126,6 +142,7 @@ input:focus {
   border: none;
   cursor: pointer;
 }
+
 #table {
   width: 100px;
 }
