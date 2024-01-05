@@ -40,6 +40,12 @@ input:focus {
   position: absolute;
 }
 /* change this  */
+.disable {
+  pointer-events: none;
+  opacity: 30%;
+  cursor: default;
+}
+
 .monthContainer {
   position: relative;
   cursor: pointer;
