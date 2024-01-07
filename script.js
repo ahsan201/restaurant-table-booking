@@ -66,3 +66,44 @@ const timeCondition = function () {
 genarateMonth();
 genarateDates();
 timeCondition();
+
+// Get all paragraph elements within the div
+
+// Month
+const monthDiv = document.querySelector(".months.dropdown");
+const monthParagraphElements = monthDiv.querySelectorAll("p");
+console.log(monthParagraphElements);
+// date
+const dateDiv = document.querySelector(".dates.dropdown");
+const dateParagraphElements = dateDiv.querySelectorAll("p");
+
+// Time
+const timesDiv = document.querySelector(".times.dropdown");
+const timeParagraphElements = timesDiv.querySelectorAll("p");
+
+// time lable
+const monthLable = document.getElementById("monthLable");
+const timeLable = document.getElementById("timeLable");
+const dateLable = document.getElementById("dateLable");
+
+// Attach click event listener to each paragraph element
+monthParagraphElements.forEach(function (paragraph) {
+  paragraph.addEventListener("click", function (event) {
+    const text = event.target.textContent;
+    monthLable.textContent = text;
+  });
+});
+
+dateParagraphElements.forEach(function (paragraph) {
+  paragraph.addEventListener("click", function (event) {
+    const text = event.target.textContent;
+    dateLable.textContent = text;
+  });
+});
+
+timeParagraphElements.forEach(function (paragraph) {
+  paragraph.addEventListener("click", function (event) {
+    const text = event.target.textContent;
+    timeLable.textContent = text;
+  });
+});

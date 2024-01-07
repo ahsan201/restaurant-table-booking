@@ -59,6 +59,7 @@ input:focus {
   cursor: pointer;
   width: 90px;
 }
+
 .dropdown {
   display: none;
   position: absolute;
@@ -117,8 +118,7 @@ input:focus {
 
 .dropdownBTN {
   display: flex;
-  flex-direction: row;
-  gap: 18px;
+  justify-content: space-between;
 }
 
 .table-selection {
