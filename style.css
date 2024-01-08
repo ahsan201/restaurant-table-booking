@@ -71,7 +71,7 @@ input:focus {
   margin-top: -18px;
   background-color: #272727;
   padding: 2px;
-  z-index: 100;
+  z-index: 50;
 }
 .dropdown p {
   padding: 5px;
@@ -152,54 +152,86 @@ input:focus {
 #table {
   width: 100px;
 }
-#big-table-1 {
+#table-1 {
   top: 14.5px;
   left: 26px;
 }
 
-#big-table-2 {
+#table-2 {
   top: 14.5px;
   left: 118px;
 }
 
-#big-table-3 {
+#table-3 {
   top: 96.5px;
   left: 67px;
 }
-#big-table-4 {
+#table-4 {
   top: 209.5px;
   left: 67px;
 }
-#big-table-5 {
+#table-5 {
   top: 291.5px;
   left: 26px;
 }
-#big-table-6 {
+#table-6 {
   top: 291.5px;
   left: 118px;
 }
 
-#small-table-1 {
+#table-7 {
   top: 58.5px;
   left: 218px;
 }
-#small-table-2 {
+#table-8 {
   top: 103.5px;
   left: 234px;
 }
-#small-table-3 {
+#table-9 {
   top: 149.5px;
   left: 242px;
 }
-#small-table-4 {
+#table-10 {
   top: 202.5px;
   left: 234px;
 }
-#small-table-5 {
+#table-11 {
   top: 247.5px;
   left: 218px;
 }
 
-.tables img {
+.tables a {
   cursor: pointer;
+}
+
+.tableSelected {
+  fill: red;
+}
+
+li a svg {
+  position: relative;
+}
+
+li a p {
+  /* display: none; */
+  position: absolute;
+  z-index: 10;
+  font-size: 15px;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  pointer-events: none;
+}
+
+.tableLableContainer {
+  width: 150px;
+  display: flex;
+  gap: 5px;
+  padding-top: 10px;
+}
+
+.tableLable {
+  width: 100px;
+  overflow: hidden;
 }

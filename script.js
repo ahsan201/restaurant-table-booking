@@ -72,7 +72,7 @@ timeCondition();
 // Month
 const monthDiv = document.querySelector(".months.dropdown");
 const monthParagraphElements = monthDiv.querySelectorAll("p");
-console.log(monthParagraphElements);
+
 // date
 const dateDiv = document.querySelector(".dates.dropdown");
 const dateParagraphElements = dateDiv.querySelectorAll("p");
@@ -105,5 +105,18 @@ timeParagraphElements.forEach(function (paragraph) {
   paragraph.addEventListener("click", function (event) {
     const text = event.target.textContent;
     timeLable.textContent = text;
+  });
+});
+
+// Table selection
+const tableList = document.querySelector(".tableList");
+const table = tableList.querySelectorAll("li");
+
+table.forEach(function (tableIteam) {
+  tableIteam.addEventListener("click", function (event) {
+    const targetTable = event.target.parentNode.children;
+    for (let i = 0; i < targetTable.length; i++) {
+      targetTable[i].classList.toggle("tableSelected");
+    }
   });
 });
