@@ -18,7 +18,7 @@
   </head>
   <body>
     <div class="container">
-      <form action="/">
+      <form action="/" autocomplete="off">
         <div class="firstNameDiv border_bottom">
           <label for="firstName">First Name:</label>
           <input type="text" name="firstName" id="firstName" required />
@@ -102,14 +102,13 @@
           </div>
         </div>
         <div class="table-selection">
-          <div class="border_bottom">
+          <div>
             <div class="tableLableContainer">
-              <label for="table">Table:</label>
-              <input class="tableLable" />
+              <label for="table">Tables - </label>
             </div>
           </div>
           <div class="resturant_map">
-            <img src="returent map.svg" alt="" id="map" />
+            <img src="returent map.svg" alt="" id="map" class="diable" />
             <div class="tables">
               <ul class="tableList">
                 <li alt="" id="table-1">
@@ -908,8 +907,24 @@
             </div>
           </div>
         </div>
-        <div class="btn"><button>BOOK NOW</button></div>
+        <div id="btn">BOOK NOW</div>
       </form>
+    </div>
+    <!-- submit Pop up  -->
+    <div class="overlay diplayClass"></div>
+    <div class="popupContainer diplayClass">
+      <div class="popupContent">
+        <h2>Table booked</h2>
+        <p>
+          Dear <span id="name"></span>, Your table
+          <span id="tableText"></span> has been successfully booked for the day
+          <span id="dateText"></span> <span id="monthText"></span> at
+          <span id="timeText"></span>. A confirmation massage has been sent to
+          <span id="emailText"></span> & <span id="phoneText"></span>.
+          <br /><br />Thank You
+        </p>
+        <div id="btnClose">close</div>
+      </div>
     </div>
   </body>
 </html>
